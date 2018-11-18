@@ -1,7 +1,7 @@
 <html>
 <script type="text/javascript">
 var obj = {
-    headings: ['Date', 'Invoice No', 'CustomerID', 'AmountDue']
+    headings: ['Date', 'Invoice No', 'CustomerID', 'AmountDue','Feedback']
 };
 var obj1 = {
   headings: ['ProductID', 'Item Name', 'Rate', 'Quantity', 'Price']  
@@ -158,6 +158,11 @@ var obj1 = {
     <center><button class="button" id="run" onClick="custname()">Proceed</button></center>
     <br><button class="button" onClick="gotoDash()">Back To Dashboard</button>
     <br><br><br>
+    <h1>Feedback</h1>
+    <br>
+    <textarea id="feedback"></textarea>
+    <br>
+    <br>
     <aside>
         <h1><span >Thank You for coming. Visit Again</span></h1>
     </aside>
@@ -176,7 +181,7 @@ var obj1 = {
         invoiceHeader.totalAmount = sum 
         fetch('examples/add/invoice',{
             method : "POST",
-            
+
         })
 });
 function custname() {
@@ -184,6 +189,7 @@ function custname() {
     //console.log(obj);
     obj[2] = document.getElementById('cid').value;
     obj[3] = document.getElementById('due').value;
+    obj[3] = document.getElementById('feedback').value;
 
     var x = document.getElementById("example-table").rows.length;
     var Row = document.getElementById("example-table");
