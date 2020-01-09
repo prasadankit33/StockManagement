@@ -10,13 +10,19 @@ where we manage inventory and analyze the day-to-day records of a dairy.
 
 
 # LIST OF ABBREVIATIONS
- IMS Inventory Management System
- DBMS Database Management System
- DDL Data Definition Language
- DML Data Manipulation Language
- SQL Structured Query Language
- SSMS SQL Server Management Studio Express
- ER Entity Relationship
+    IMS Inventory Management System
+    
+    DBMS Database Management System
+    
+    DDL Data Definition Language
+    
+    DML Data Manipulation Language
+    
+    SQL Structured Query Language
+    
+    SSMS SQL Server Management Studio Express
+    
+    ER Entity Relationship
 
 
 # FUNCTIONALITIES
